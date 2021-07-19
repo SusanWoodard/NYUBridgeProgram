@@ -13,13 +13,13 @@ int main()
 
 	totalCents = (dollars * 100) + cents;
 
-	quarters = totalCents / 25;
+	quarters = totalCents / 25; //Quarters are worth 25 cents
 	minusQuarters = totalCents % 25;
-	dimes = minusQuarters / 10;
+	dimes = minusQuarters / 10; //Dimes are worth 10 cents
 	minusQuartersAndDimes = minusQuarters % 10;
-	nickels = minusQuartersAndDimes / 5;
+	nickels = minusQuartersAndDimes / 5; //Nickels are worth 5 cents
 	minusQuartersDimesAndNickels = minusQuartersAndDimes % 5;
-	pennies = minusQuartersDimesAndNickels / 1;
+	pennies = minusQuartersDimesAndNickels / 1; //Pennies are worth 1 cent
 
 	cout << dollars << " dollars and " << cents << " cents are: " << endl;
 	cout << quarters << " quarters, " << dimes << " dimes, " << nickels << " nickels, and " << pennies << " pennies.";
